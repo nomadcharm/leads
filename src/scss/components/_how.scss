@@ -1,0 +1,115 @@
+.how {
+  padding-top: 120px;
+
+  &__slide {
+    position: relative;
+    padding: 80px 150px 170px;
+    min-height: 628px;
+    border-radius: 40px;
+    background-color: var(--clr-wild-sand);
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 90px;
+  }
+
+  &__step {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 659px;
+  }
+
+  &__step-num {
+    position: relative;
+    margin-bottom: 34px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -112px;
+      width: 72px;
+      height: 72px;
+    }
+
+    &--one {
+      &::before {
+        background-image: url("../../img/smile-slide-1.svg");
+      }
+    }
+
+    &--two {
+      &::before {
+        background-image: url("../../img/smile-slide-2.svg");
+      }
+    }
+
+    &--three {
+      &::before {
+        background-image: url("../../img/smile-slide-3.svg");
+      }
+    }
+
+    &--four {
+      &::before {
+        background-image: url("../../img/smile-slide-4.svg");
+      }
+    }
+
+    &--five {
+      &::before {
+        background-image: url("../../img/smile-slide-5.svg");
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 26px;
+    padding-left: 10px;
+  }
+
+  &__item {
+    position: relative;
+    counter-increment: item;
+    padding-left: 26px;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+
+
+    &::before {
+      content: counter(item) ".";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__text-content {
+    max-width: 730px;
+  }
+
+  &__text {
+    padding-top: 24px;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+  }
+}

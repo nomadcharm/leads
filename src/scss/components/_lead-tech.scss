@@ -1,0 +1,88 @@
+.lead-tech {
+  padding-top: 120px;
+
+  &__container {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+  }
+
+  &__img {
+    position: relative;
+    width: 677px;
+    height: 442px;
+    background-image: url("../../img/img-lead-tech.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: -76px;
+      width: 72px;
+      height: 72px;
+      background-image: url("../../img/icon-star-1.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      rotate: 8deg;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -62px;
+      right: 26px;
+      width: 57px;
+      height: 57px;
+      background-image: url("../../img/icon-star-1.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      rotate: 36deg;
+    }
+  }
+
+  &__content {
+    padding-left: 10px;
+    width: 50%;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    max-width: 434px;
+
+    &--accent {
+      color: var(--clr-blaze-orange);
+    }
+
+    &:is(.lead-tech__title--accent) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        right: -84px;
+        width: 60px;
+        height: 60px;
+        background-image: url("../../img/smile-sunglasses.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__description {
+    max-width: 729px;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

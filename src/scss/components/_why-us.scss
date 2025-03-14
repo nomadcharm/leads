@@ -1,0 +1,141 @@
+.why-us {
+  padding-top: 120px;
+
+  &__info {
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 885px;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+
+    &--accent {
+      color: var(--clr-blaze-orange);
+    }
+  }
+
+  &__description {
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    color: var(--clr-gray);
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    margin-bottom: 27px;
+    width: calc((100% - 40px) / 3);
+  }
+
+  &__add-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__add-item {
+    width: calc((100% - 80px) / 5);
+  }
+}
+
+.why-card {
+  position: relative;
+  padding: 40px;
+  min-height: 317px;
+  border-radius: 30px;
+  background-color: var(--clr-wild-sand);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/icon-star-black-2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__num {
+    margin-bottom: 12px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+  }
+}
+
+.add-card {
+  position: relative;
+  padding: 30px;
+  padding-top: 96px;
+  min-height: 420px;
+  border-radius: 30px;
+  background-color: var(--clr-wild-sand);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--one {
+    &::before {
+      background-image: url("../../img/smile-voltage.svg");
+    }
+  }
+
+  &--two {
+    &::before {
+      background-image: url("../../img/smile-fire.svg");
+    }
+  }
+
+  &--three {
+    &::before {
+      background-image: url("../../img/smile-star.svg");
+    }
+  }
+
+  &--four {
+    &::before {
+      background-image: url("../../img/smile-100.svg");
+    }
+  }
+
+  &--five {
+    &::before {
+      background-image: url("../../img/smile-running.svg");
+    }
+  }
+
+  &__title,
+  &__description {
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+}

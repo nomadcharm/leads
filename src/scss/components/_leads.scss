@@ -1,0 +1,108 @@
+.leads {
+  padding-top: 125px;
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+
+    &--accent {
+      color: var(--clr-blaze-orange);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  padding: 60px 40px;
+  min-height: 349px;
+  border-radius: 30px;
+  background-image: url("../../img/card-background.svg");
+  background-color: var(--clr-wild-sand);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 364px;
+    height: 349px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  &--one {
+    &::before {
+      background-image: url("../../img/leads-card-1.svg");
+    }
+  }
+
+  &--two {
+    &::before {
+      background-image: url("../../img/leads-card-2.svg");
+    }
+  }
+
+  &--three {
+    &::before {
+      background-image: url("../../img/leads-card-3.svg");
+    }
+
+    & > .card__content > .card__title {
+      max-width: 266px;
+    }
+  }
+
+  &--four {
+    &::before {
+      background-image: url("../../img/leads-card-4.svg");
+    }
+  }
+
+  &__content {
+    max-width: 466px;
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 28px;
+    min-width: 266px;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -80px;
+      width: 44px;
+      height: 44px;
+      background-image: url("../../img/icon-star-3.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+}
+
+  &__text {
+    margin: 0;
+    font-size: 24px;
+    color: var(--clr-gray);
+  }
+}

@@ -1,0 +1,114 @@
+.hero {
+  padding-top: 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: var(--clr-wild-sand);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 128px;
+    margin-bottom: 60px;
+  }
+
+  &__info {
+    width: 801px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    color: var(--clr-mine-shaft);
+
+    &--accent {
+      color: var(--clr-blaze-orange);
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin: 0;
+    margin-bottom: 45px;
+    max-width: 525px;
+    font-size: 32px;
+    letter-spacing: 1px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: -94px;
+      width: 72px;
+      height: 72px;
+      background-image: url("../../img/smile-dollar-signs.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 791px;
+    height: 497px;
+    background-image: url("../../img/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21%;
+      right: -31px;
+      width: 62px;
+      height: 62px;
+      background-image: url("../../img/icon-star-1.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 16%;
+      left: -31px;
+      width: 62px;
+      height: 62px;
+      background-image: url("../../img/icon-star-2.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__advantages-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 88px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--clr-gray);
+    background-color: var(--clr-white);
+  }
+}

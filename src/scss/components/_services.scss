@@ -1,0 +1,68 @@
+.services {
+  padding-top: 110px;
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 730px;
+  min-height: 330px;
+  border-radius: 32px;
+  background-color: var(--clr-wild-sand);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 48px;
+    height: 48px;
+    background-image: url("../../img/icon-star-3.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    rotate: 60deg;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    max-width: 70%;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__price {
+    margin-bottom: auto;
+    font-size: 24px;
+
+    &--amount {
+      font-family: var(--font-montserrat);
+      font-weight: 700;
+      font-size: 36px;
+      color: transparent;
+      background: linear-gradient(90deg, #FF6600 0%, #F26659 27.4%, #F06177 37.4%, #E65D97 48.4%, #CA46D2 71.4%, #8D13F9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__button {
+    margin-top: auto;
+  }
+}

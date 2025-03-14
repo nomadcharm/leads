@@ -1,0 +1,57 @@
+.body {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  color: var(--clr-mine-shaft);
+}
+
+.container {
+  margin-inline: auto;
+  padding: 0 70px;
+  width: min(100%, 1920px);
+}
+
+.section-title {
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  color: var(--clr-mine-shaft);
+}
+
+.main-btn {
+  padding: 21.5px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  background-color: var(--clr-blaze-orange);
+  transition: background-color 0.3s ease-in-out;
+
+  @include hover {
+    background-color: var(--clr-neon-carrot);
+  }
+
+  &:focus,
+  &:active {
+    background-color: var(--clr-grenadier);
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--clr-blaze-orange);
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 82px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

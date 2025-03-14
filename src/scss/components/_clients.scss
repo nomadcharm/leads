@@ -1,0 +1,42 @@
+.clients {
+  padding-top: 120px;
+
+  &__info {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    &--accent {
+      color: var(--clr-blaze-orange);
+    }
+  }
+
+  &__description {
+    margin-bottom: 45px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: var(--clr-gray);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    width: calc((100% - 60px) / 4);
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 30px;
+    background-color: var(--clr-wild-sand);
+  }
+}

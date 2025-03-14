@@ -1,0 +1,60 @@
+.banner {
+  padding-top: 120px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 150px;
+    border-radius: 40px;
+    background-color: var(--clr-mine-shaft);
+  }
+
+  &__content {
+    max-width: 760px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    color: var(--clr-white);
+  }
+
+  &__img {
+    position: relative;
+    width: 683px;
+    height: 403px;
+    border-radius: 30px;
+    background-image: url("../../img/img-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 8px;
+      width: 70px;
+      height: 70px;
+      background-image: url("../../img/icon-star-1.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      rotate: 18deg;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 32px;
+      right: 46px;
+      width: 70px;
+      height: 70px;
+      background-image: url("../../img/icon-star-1.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

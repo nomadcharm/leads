@@ -1,0 +1,114 @@
+.faq {
+  padding-top: 120px;
+
+  &__title {
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__questions-wrapper {
+    width: calc((100% - 20px) / 2);
+  }
+
+  &__img {
+    width: calc((100% - 20px) / 2);
+    max-height: 582px;
+    border-radius: 30px;
+    background-image: url("../../img/img-faq.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.accordion {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+
+  &__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 20px;
+    padding: 40px;
+    width: 100%;
+    min-height: 126px;
+    outline: none;
+    box-shadow: none;
+    border-radius: 30px;
+    text-align: left;
+    letter-spacing: 0.7px;
+    background-color: var(--clr-wild-sand);
+    transition: box-shadow 0.3s ease-in-out;
+
+    &.active {
+      box-shadow: 0 0 0 3px var(--clr-mine-shaft);
+
+      &>.accordion__trigger-svg {
+        display: none;
+      }
+
+      &>.accordion__trigger-svg--open {
+        display: block;
+      }
+    }
+
+    @include hover {
+      box-shadow: 0 0 0 3px var(--clr-blaze-orange);
+
+      & > .accordion__trigger-svg {
+        & > path {
+          stroke: var(--clr-blaze-orange);
+        }
+      }
+    }
+  }
+
+  &__trigger-svg {
+    flex-shrink: 0;
+
+    &--open {
+      display: none;
+    }
+
+    & > path {
+      stroke: var(--clr-mine-shaft);
+      transition: stroke 0.3s ease-in-out;
+    }
+  }
+
+  &__content {
+    padding: 0px;
+    width: 100%;
+    border-radius: 30px;
+    text-align: left;
+    background-color: var(--clr-wild-sand);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    visibility: hidden;
+
+    &.active {
+      margin-bottom: 25px;
+      padding: 40px;
+      max-height: 399px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__text {
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+}
