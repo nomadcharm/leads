@@ -46,19 +46,19 @@
 
   &--one {
     &::before {
-      background-image: url("../../img/leads-card-1.svg");
+      background-image: url("../img/leads-card-1.svg");
     }
   }
 
   &--two {
     &::before {
-      background-image: url("../../img/leads-card-2.svg");
+      background-image: url("../img/leads-card-2.svg");
     }
   }
 
   &--three {
     &::before {
-      background-image: url("../../img/leads-card-3.svg");
+      background-image: url("../img/leads-card-3.svg");
     }
 
     & > .card__content > .card__title {
@@ -68,7 +68,7 @@
 
   &--four {
     &::before {
-      background-image: url("../../img/leads-card-4.svg");
+      background-image: url("../img/leads-card-4.svg");
     }
   }
 
@@ -93,7 +93,7 @@
       right: -80px;
       width: 44px;
       height: 44px;
-      background-image: url("../../img/icon-star-3.svg");
+      background-image: url("../img/icon-star-3.svg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;

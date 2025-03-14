@@ -57,7 +57,7 @@
     right: 40px;
     width: 60px;
     height: 60px;
-    background-image: url("../../img/icon-star-black-2.svg");
+    background-image: url("../img/icon-star-black-2.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,31 +100,31 @@
 
   &--one {
     &::before {
-      background-image: url("../../img/smile-voltage.svg");
+      background-image: url("../img/smile-voltage.svg");
     }
   }
 
   &--two {
     &::before {
-      background-image: url("../../img/smile-fire.svg");
+      background-image: url("../img/smile-fire.svg");
     }
   }
 
   &--three {
     &::before {
-      background-image: url("../../img/smile-star.svg");
+      background-image: url("../img/smile-star.svg");
     }
   }
 
   &--four {
     &::before {
-      background-image: url("../../img/smile-100.svg");
+      background-image: url("../img/smile-100.svg");
     }
   }
 
   &--five {
     &::before {
-      background-image: url("../../img/smile-running.svg");
+      background-image: url("../img/smile-running.svg");
     }
   }
 
