@@ -1,6 +1,4 @@
-// consider gulp-plumber, gulp-replace, gulp-rename
-
-const { src, dest, series, watch, parallel } = require('gulp');
+const { src, dest, series, watch  } = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const browserSync = require('browser-sync').create();
@@ -8,6 +6,8 @@ const cheerio = require('gulp-cheerio');
 const cleanCSS = require('gulp-clean-css');
 const del = require('del');
 const fileInclude = require('gulp-file-include');
+const ghPages = require('gh-pages');
+const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const htmlMin = require('gulp-htmlmin');
 const imageMin = require('gulp-imagemin');

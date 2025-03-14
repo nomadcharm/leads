@@ -36,7 +36,8 @@
     "gulp-typograf": "^4.1.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.69.4"
+    "sass": "^1.69.4",
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "swiper": "^11.2.5"
